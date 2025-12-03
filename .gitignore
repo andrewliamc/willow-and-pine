@@ -1,0 +1,28 @@
+# Node / Next.js
+node_modules
+.next
+out
+dist
+.turbo
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Editor
+.DS_Store
+*.swp
+.vscode/*
+!.vscode/extensions.json
+
+# OS
+Thumbs.db
+._*
