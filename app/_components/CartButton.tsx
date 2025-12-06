@@ -23,7 +23,7 @@ export default function CartButton() {
         <circle cx="10" cy="19" r="1" />
         <circle cx="16" cy="19" r="1" />
       </svg>
-      <span>Cart</span>
+      <span className="hidden sm:inline">Cart</span>
       <span className="inline-flex items-center justify-center min-w-[1.75rem] h-7 px-2 rounded-full bg-soft-sage text-forest text-xs font-semibold">
         {count}
       </span>
