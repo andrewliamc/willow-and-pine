@@ -13,14 +13,6 @@ export type TeaProduct = {
   isFeatured?: boolean;
 };
 
-const encodeHex = (hex: string) => hex.replace("#", "%23");
-const createPlaceholderImage = (title: string, accent = "#A7C4A0") => {
-  const bg = encodeHex("#F5F1EB");
-  const accentEncoded = encodeHex(accent);
-  const text = encodeURIComponent(title);
-  return `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'><rect width='800' height='600' fill='${bg}'/><circle cx='130' cy='140' r='110' fill='${accentEncoded}' fill-opacity='0.22'/><circle cx='640' cy='480' r='140' fill='${accentEncoded}' fill-opacity='0.15'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Cormorant Garamond, serif' font-size='48' fill='%23173F2A'>${text}</text></svg>`;
-};
-
 const teas: TeaProduct[] = [
   {
     id: "willow-garden-green",
@@ -38,7 +30,7 @@ const teas: TeaProduct[] = [
     ],
     sizeOptions: ["50g pouch", "100g tin"],
     formatOptions: ["Loose Leaf"],
-    image: createPlaceholderImage("Willow Garden Green", "#A7C4A0"),
+    image: "/images/willow-garden-green.jpg",
     isFeatured: true,
   },
   {
@@ -57,7 +49,7 @@ const teas: TeaProduct[] = [
     ],
     sizeOptions: ["75g pouch", "150g tin"],
     formatOptions: ["Loose Leaf"],
-    image: createPlaceholderImage("Pine Mist Oolong", "#C8A68C"),
+    image: "/images/pine-mist-oolong.jpg",
     isFeatured: true,
   },
   {
@@ -76,7 +68,7 @@ const teas: TeaProduct[] = [
     ],
     sizeOptions: ["50g pouch", "20 sachets"],
     formatOptions: ["Loose Leaf", "Sachets"],
-    image: createPlaceholderImage("Evening Hearth Herbal", "#F5F1EB"),
+    image: "/images/evening-hearth-herbal.jpg",
     isFeatured: true,
   },
   {
@@ -95,7 +87,7 @@ const teas: TeaProduct[] = [
     ],
     sizeOptions: ["75g pouch", "150g tin"],
     formatOptions: ["Loose Leaf"],
-    image: createPlaceholderImage("Emberwood Black", "#A7C4A0"),
+    image: "/images/emberwood-black.jpg",
   },
   {
     id: "citrus-grove-white",
@@ -113,7 +105,7 @@ const teas: TeaProduct[] = [
     ],
     sizeOptions: ["40g tin", "80g tin"],
     formatOptions: ["Loose Leaf"],
-    image: createPlaceholderImage("Citrus Grove White", "#C8A68C"),
+    image: "/images/citrus-grove-white.jpg",
   },
   {
     id: "autumn-spice-chai",
@@ -131,7 +123,7 @@ const teas: TeaProduct[] = [
     ],
     sizeOptions: ["80g pouch", "160g tin"],
     formatOptions: ["Loose Leaf"],
-    image: createPlaceholderImage("Autumn Spice Chai", "#A7C4A0"),
+    image: "/images/autumn-spice-chai.jpg",
   },
 ];
 
